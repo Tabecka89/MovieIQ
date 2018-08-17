@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_game_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/holo_orange_dark"
+    android:layoutDirection="ltr"
+    tools:context=".GameScreenActivity">
+
+    <TextView
+        android:id="@+id/tierTextView"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Tier"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/pointTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/tierTextView"
+        android:layout_marginEnd="53dp"
+        android:text="@string/points"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="302dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:gravity="center_horizontal"
+        android:text="description"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/raiseIQButton"
+        android:layout_alignStart="@+id/pointTextView"
+        android:text="Hint" />
+
+    <Button
+        android:id="@+id/raiseIQButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/submitButton"
+        android:layout_toEndOf="@+id/tierTextView"
+        android:clickable="false"
+        android:text="Raise My Movie-IQ!" />
+
+    <EditText
+        android:id="@+id/answerEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="111dp"
+        android:hint="Your Answer" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@+id/tierTextView"
+        android:onClick="onClick"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/hintTextView1"
+        android:layout_width="98dp"
+        android:layout_height="151dp"
+        android:layout_alignEnd="@+id/tierTextView"
+        android:layout_below="@+id/questionTextView"
+        android:text="Hints"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/hintTextView3"
+        android:layout_width="89dp"
+        android:layout_height="151dp"
+        android:layout_alignStart="@+id/pointTextView"
+        android:layout_alignTop="@+id/hintTextView1"
+        android:text="Hints"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/hintTextView2"
+        android:layout_width="92dp"
+        android:layout_height="151dp"
+        android:layout_alignStart="@+id/questionTextView"
+        android:layout_alignTop="@+id/hintTextView1"
+        android:text="Hints"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/clipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/hintButton"
+        android:layout_toStartOf="@+id/tierTextView"
+        android:text="Play Clip" />
+
+
+</RelativeLayout>

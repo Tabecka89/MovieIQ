@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_tiers"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@android:color/holo_blue_dark"
+    android:layoutDirection="ltr"
+    tools:context=".TiersActivity">
+
+    <Button
+        android:id="@+id/tier1"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="@string/tier_1"
+        android:onClick="onClick"/>
+
+    />
+
+    <Button
+        android:id="@+id/tier2"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tier1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tier_2"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/tier3"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tier2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tier_3"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/tier4"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tier3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tier_4"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/tier5"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tier4"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/tier_5" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@color/colorAccent"
+        android:onClick="onLogout"
+        android:text="@string/btn_sign_out"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="283dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarTiers"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="94dp" />
+
+    <TextView
+        android:id="@+id/userTextView"
+        android:layout_width="261dp"
+        android:layout_height="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="184dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tier1"
+        android:layout_marginBottom="149dp"
+        android:text="Rank:"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rankTextView"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/logout"
+        android:layout_alignTop="@+id/textView2"
+        android:text="TextView"
+        android:textColor="#b3fb5f"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

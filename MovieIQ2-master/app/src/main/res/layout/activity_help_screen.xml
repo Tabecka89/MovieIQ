@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:layoutDirection="ltr"
+    tools:context=".HelpScreenActivity">
+
+    <TextView
+        android:id="@+id/helpTextView"
+        android:layout_width="347dp"
+        android:layout_height="129dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/tip1TextView"
+        android:layout_width="305dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="159dp"
+        android:text="TextView"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tip2TextView"
+        android:layout_width="306dp"
+        android:layout_height="102dp"
+        android:layout_below="@+id/tip1TextView"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tip3TextView"
+        android:layout_width="307dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/tip2TextView"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/tip4TextView"
+        android:layout_width="309dp"
+        android:layout_height="78dp"
+        android:layout_below="@+id/tip3TextView"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>
